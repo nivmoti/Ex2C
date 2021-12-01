@@ -27,7 +27,7 @@ int main(){
                  scanf("%d",&number);
                 int j=number;
                 int temp=C(i,j,graph);
-                printf("%d\n",&temp);
+                printf("%d\n",temp);
            }
            
 
