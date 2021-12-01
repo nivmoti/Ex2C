@@ -5,7 +5,6 @@
 
 int main(){
    int  graph[N][N]={0};
-    // FILE *fb= fopen("input3.txt","r");
     char single;
     int number;
     scanf("%c",&single);
@@ -28,8 +27,7 @@ int main(){
                  scanf("%d",&number);
                 int j=number;
                 int temp=C(i,j,graph);
-                printf("%d",temp);
-                printf("\n");
+                printf("%d\n",temp);
            }
            
 
