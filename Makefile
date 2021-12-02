@@ -2,14 +2,14 @@ FLAG=-Wall -g
 CC=gcc
 
 #targets:
-all: mats matd connection
+all: mats matd connections
 #names
 mats: libclassmatd.a
 matd: libcalssmats.so 
 
 #main
-connection: main.o
-	$(CC) $(FLAG) -o connection main.o ./libcalssmats.so -lm
+connections: main.o
+	$(CC) $(FLAG) -o connections main.o ./libcalssmats.so -lm
 
 
 #static andynamic library
@@ -27,4 +27,4 @@ main.o: main.c my_mat.h
 #clean all the file that created by make file
 .PHONY:clean
 clean: 
-	rm -f *.o *.so *.a connection
+	rm -f *.o *.so *.a connections
