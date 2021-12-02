@@ -4,7 +4,7 @@
 
 
 int main(){
-   int  graph[N][N]={0};
+   int  graph[N][N];
     char single;
     int number;
     scanf("%c",&single);
